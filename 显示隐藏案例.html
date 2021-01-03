@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示隐藏案例</title>
+</head>
+<body>
+ <button id="btn">隐藏</button>
+  <br>
+<img src = "img/01.jpg" id="new">
+<script type="text/javascript">
+//1.获取事件源也就是Dom
+    var obtn = document.getElementById('btn');
+    var newImg = document.getElementsByTagName('img')[0]; //0是索引代表当前元素
+    //var isShow = true; 这样写代码有些冗余,我们可以通过文本隐藏来做条件控制
+
+
+     //2 绑定事件
+   obtn.onclick = function () {
+       //3.事件驱动,首先我们得获取这个元素img,那就在1哪里定义一个img对象
+       if(obtn.innerHTML === '隐藏'){
+           newImg.style.display = 'none';
+           obtn.innerHTML = '显示';
+           //isShow = false; 如果文本等于隐藏那么我就判断他的条件位false那么下一次点击的时候就为else
+       } else {
+           newImg.style.display = 'block';
+           obtn.innerHTML = '隐藏';
+          // isShow = true;
+       }
+   }
+</script>
+</body>
+</html>

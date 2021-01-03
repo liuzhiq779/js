@@ -1,0 +1,78 @@
+用ajax实现百度新闻
+     思路:
+        1.分析结构,切页面
+        2.造假数据,在服务端有参次结构,而且这样的数据还非常的多,所以只能是数组结构了,就是下面的结构了  
+        [{
+		"title": "主标题1111",
+		"href": "http://www.baidu.com",
+		"child": [{
+				"title": "副标题1111",
+				"href": "http://www.baidu.com"
+			},
+			{
+				"title": "副标题2222",
+				"href": "http://www.baidu.com"
+			}
+		]
+	},
+	{
+		"title": "主标题1111",
+		"href": "http://www.baidu.com",
+		"child": [{
+				"title": "副标题1111",
+				"href": "http://www.baidu.com"
+			},
+			{
+				"title": "副标题2222",
+				"href": "http:  //www.baidu.com"
+			}
+		]
+	}
+]
+使用格式校验工具bejosn
+
+3 拼接DOM和字符串
+
+
+
+ajax与服务器的交互流程
+
+1. 创建一个ajax
+  创建一个ajax对象 chrome
+     if(window.XMLHttpRequest){
+		 var oAjax = new XMLHttpRequest();
+	 } else{
+		 //ie6
+	  var oAjax = new ActiveXobject
+	   ('Microsoft.XMLHTTP');
+	 }
+2.创建连接
+
+  oAjax.open("请求方式,例如get","请求地址,例如www.baidu.com"是否异步,默认是)
+
+3.发送请求
+       oAjax.send();
+4.接收
+       
+
+
+------------------
+通信状态
+0初始化 XMLHttpRequest 对象初始
+1载入完成,开始发送请求
+2发送请求完成
+3开始解析读取服务器的响应
+4完成,对象读取服务器响应结束
+
+http状态 status
+
+2XX 200 成功
+3xx 重定向 
+ 
+
+
+例子
+1.有一个手机  -> 1.0 创建一个ajax
+2.拨号        -> 2.0创建连接
+3.说点啥      -> 3.0发送请求
+4.听他说点啥   -> 4.0接收

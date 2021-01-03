@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table id="employeeTable" border="1" soil width="50%">
+    <tbody>
+    <tr>
+        <td>name</td>
+        <td>Email</td>
+        <td>Salar</td>
+        <td>&nbsp</td>
+        <td><a href="delename?id=00">Delete</a></td>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>tom@tom.com</td>
+        <td>5000</td>
+        <td><a href="deleEmp?id=001">Delete</a></td>
+    </tr>
+    <tr>
+        <td>jerry@sohu.com</td>
+        <td>8000</td>
+        <td><a href="deleEmp?id=002">Delete</a></td>
+    </tr>
+    <tr>
+    <tr>
+        <td>Tom</td>
+        <td>tom@tom.com</td>
+        <td>5000</td>
+        <td><a href="deleEmp?id=003">Delete</a></td>
+    </tr>
+    <tr>
+        <td>bob@sohu.com</td>
+        <td>10000</td>
+        <td><a href="deleEmp?id=004">Delete</a></td>
+    </tr>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+    <tr>
+        <td class="word">name: </td>
+        <td class="inp">
+            <input type="text" name="empName" id="empName"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="word">email</td>
+        <td class="inp">
+            <input type="text" name="email" id="email"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="word">salary</td>
+        <td class="inp">
+            <input type="text" name="salary" id="salary"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<button type="submit" style="margin-left: 80px" id="addEmpButton">提交</button>
+</body>
+<script>
+function delA() {
+    // 点击超链接以后删除超链接所在的那行
+    //这里this点谁就是谁
+
+    // 下面就是操作tr了
+    // 1获取当前的tr
+    var tr = this.parentNode.parentNode;
+    // // 删除tr
+    // tr.parentNode.removeChild(tr);
+
+    // alert("确认删除吗?")
+    var flag = confirm("确认删除吗");
+    //如果用户点击确认
+    if (flag) {
+        //删除
+        tr.parentNode.removeChild(tr);
+    }
+    return false
+}
+window.onload = function () {
+    //点击超链接以后删除信息
+
+// 获取所有超链接
+    var allA = document.getElementsByTagName('a')
+//为每个超链接都绑点一个单击响应函数
+    for (var i = 0; i < allA.length; i++) {
+        allA[i].onclick = delA
+    }
+           /*添加员工的功能
+            *  点击按钮以后将员工的信息添加到表格中
+            *
+           */
+         //第一步为按钮绑定一个函数
+      var addEmpButton = document.getElementById('addEmpButton');
+     addEmpButton.onclick = function () {
+         // 二获取填写信息
+         // 第一步获取一个姓名,文本框的属性其实就是value属性
+         var name = document.getElementById('empName').value;
+         //获取员工的email和salary
+         var email  = document.getElementById('email').value;
+         var salary = document.getElementById('salary').value;
+         // alert(name + "," + email+ "," + salary);
+         // 第三步需要将获取到的信息保存到tr中
+         // 创建一个tr
+         var tr = document.createElement('tr');
+         //创建四个td
+         var nameTd = document.createElement('td');
+         var emailTd = document.createElement('td');
+         var salaryTd = document.createElement('td');
+         var aTd = document.createElement('td');
+         //四 创建一个超链接a;
+         var a = document.createElement('a');
+
+         // 创建文本节点
+         var nameText = document.createTextNode(name);
+         var emailText = document.createTextNode(email);
+         var salaryText = document.createTextNode(salary);
+         var deltext = document.createTextNode('Delete');
+
+         //将文本添加到td中去
+         nameTd.appendChild(nameText);
+         emailTd.appendChild(emailText);
+         salaryTd.appendChild(salaryText);
+
+         //向文本中添加a文本
+         a.appendChild(deltext)
+
+         //将a添加到td中
+         aTd.appendChild(a);
+
+         //将td添加到tr中
+        tr.appendChild(nameTd);
+        tr.appendChild(emailTd);
+        tr.appendChild(salaryTd);
+        tr.appendChild(aTd);
+
+        //向a中添加href属性
+         a.href = '#';
+         //添加响应函数
+         a.onclick = delA
+         // 获取table
+         var employeetable = document.getElementById("employeeTable")
+
+         // 将tr添加到table中,后续因为浏览器会自动给元素加一个tbody元素,所以我们要把元素加到tbody中去
+         var tbody = employeetable.getElementsByTagName('tbody')[0]
+         //将tr添加到tbody中
+         tbody.appendChild(tr)
+         // employeetable.appendChild(tr)
+
+     };
+}
+</script>
+</html>

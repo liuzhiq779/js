@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择</title>
+</head>
+<body>
+<form action="javascript:">
+    <p>选择爱好</p>
+    <p><label><input type="checkbox" name="">爬山</label></p>
+    <p><label><input type="checkbox" name="">爬山</label></p>
+    <p><label><input type="checkbox" name="">爬山</label></p>
+    <p><label><input type="checkbox" name="">爬山</label></p>
+    <p><label><input type="checkbox" name="">爬山</label></p>
+    <p>
+        <button id="all">全选</button>
+        <button id="noall">全不选</button>
+        <button id="unall">反选</button>
+    </p>
+    <script>
+    all = document.getElementById('all');
+    noall = document.getElementById('noall');
+    unall = document.getElementById('unall');
+    objs = document.getElementsByTagName('input');
+    //全选
+    all.onclick = function () {
+       for (i =0; i<objs.length;i++){
+           objs[i].checked = true;
+       }
+    }
+    //反选择
+    unall.onclick = function () {
+        for ( i=0; i<objs.length;i++){
+            objs[i].checked = !objs[i].checked;
+        }
+    }
+    </script>
+</form>
+</body>
+</html>

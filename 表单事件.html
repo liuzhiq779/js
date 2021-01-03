@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单事件</title>
+</head>
+<body>
+  <form action="http://www.baidu.com" method="get" id="fid">
+      <p>用户名</p>
+        <input class="txt" type="text"
+               name="name" placeholder="请输入用户名"
+               id="input" value="javascript">
+        <input class="txt" type="text"
+               name="name" value="javascript" id="input2">
+        <input class="txt" type="text" id="input3">
+        <input class="txt" type="text" id="input4">
+      <!--下拉菜单 -->
+      <select id="s1">
+          <option placeholder="选择城市">选择城市</option>
+          <option value="北京">北京</option>
+          <option value="太原">太原</option>
+          <option value="南京">南京</option>
+          <option value="南宁">南宁</option>
+          <option value="天津">天津</option>
+      </select><br>
+      <h3>请确认你选择的城市: <span id="s2"></span></h3>
+      <input type="submit" value="提交">&nbsp;&nbsp;<input type="reset" value="重置">
+  </form>
+ <script type="text/javascript">
+    inobj = document.getElementById('input');
+    inobj.onfocus=function () {
+        this.style.outlineColor="#f00";
+    }
+    inobj.onblur = function () {
+        val = this.value;
+        if (val.length<6){
+            alert("用户名至少6位");
+        }
+    }
+
+    //改当值改变的时候
+ inobj.onselect = function () {
+    alert("不要改变我的元素");
+    }
+    //当表单元素被选中的时候
+ inobj.onselect = function () {
+     alert('我已经被选中');
+ }
+ //当表单提交的时候
+ fidobj = document.getElementById('fid');
+ fidobj.onsubmit = function () {
+     r = confirm('您要提交表单吗?');
+     if(!r){
+         return false;
+     }
+ }
+ //表单重置的时候
+ fidobj.onreset=function () {
+     r = confirm('你要重置吗');
+     if(!r){
+         return false;
+     }
+ }
+ //onchange应用下拉菜单
+ s1obj=document.getElementById('s1');
+ s2obj=document.getElementById('s2');
+ s1obj=onchange=function () {
+     s1va=this.value;
+     s2obj=innerHTML=s1val;
+ }
+ //获取表单焦点,全部选中表单元素
+ inobj2=document.getElementById('input2')
+ inobj2=onfocus=function () {
+     this.select(); //全选
+ }
+ //鼠标事件
+ //鼠标移入
+ inobj.onmousedown=function () {
+     this.value='I love javascript';
+ }
+ //鼠标移除
+ inobj.onmouseleave=function(){
+     this.value='I love java';
+ }
+ inobj3=document.getElementById('input3');
+ //鼠标移动
+ inobj3.onmousemove=function () {
+     this.style.outlineColor="#f00";
+     this.value="javascript";
+ }
+ //键盘事件
+ inobj4 = document.getElementById('input4');
+ //键盘按下时
+ inobj4.onkeydown=function () {
+     alert('你按下就会触发我');
+ }
+ //键盘弹起时
+ inobj4.onkeyup=function () {
+     alert('你弹起键盘就会触发我');
+     val = this.value.toUpperCase();//转换成大写
+     this.value = val;
+ }
+ inobj4.onkeypress=function () {
+     alert('按住我不放,我会一直弹出的呀')
+ }
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+     data = [
+     {id: 23, parentld: 23123, name:'aaa'},
+     {id: 13, parentld: 23, name: 'bbb'},
+     其中id代表当前唯一的识别标识,根据id和parentld判断该元素的层级关系,最终组成一个树状结构
+     如下
+     data = [
+     {id: 23, parentld: 23123, name:'aaa',children:[
+     ]},
+     {id: 13, parentld: 23, name: 'bbb', children:[
+
+     ]},
+
+     ]
+
+  实现思路: 1.根据data新建一个以id为key的新数组map
+           2.遍历data,如果item在map中存在父元素,则放到map中相应的childer里面
+           3.删除放入到children里面的item
+
+    -->
+</head>
+<body>
+
+</body>
+<script>
+  var map = {};
+  //根据data新建一个以id为key的性数组map
+  data.forEach(function (item) {
+      map[item.id] = item;
+  });
+
+data.forEach(item => {
+    let parent = map[item.parent_id]
+    if (parent) {
+       if (parent) {
+           if (!parent.children) {
+               parent.children = []
+           }
+           parent.children.push(item)
+    }
+    }
+})
+console.log(map)
+</script>
+</html>

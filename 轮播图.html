@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js原生轮播图</title>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="inner" id="inner">
+        <ul id="imgList">
+            <li>
+                <a herf="#"><img src="img/01.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/02.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/03.jpg"></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="img/04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/06.jpg"></a>
+            </li>
+
+        </ul>
+        <div class="list">
+            <i class="current">1</i>
+            <i>2</i>
+            <i>3</i>
+            <i>4</i>
+            <i>5</i>
+            <i>6</i>
+
+        </div>
+        <div class="arrow">
+            <span class="arrow-left">&lt;</span>
+            <span class="arrow-right">&gt;</span>
+        </div>
+
+    </div>
+</div>
+
+</body>
+ <style type="text/css">
+     *{
+         margin: 0;
+         padding: 0;
+     }
+
+     ul{
+         List-style: none;
+     }
+
+     .box{
+         width: 730px;
+         height: 454px;
+         padding: 8px;
+         border: 1px solid green;
+         margin: 100px auto;
+
+     }
+
+     .inner{
+         position: relative;
+         overflow: hidden;
+         height: 454px;
+     }
+
+     #imgList{
+         width: 700%;
+         position: absolute;
+         left: 0;
+         transition:  left 300ms linear;
+     }
+
+     li{
+         float: left;
+     }
+
+     .list{
+         position: absolute;
+         bottom: 20px;
+         left: 50%;
+         margin-left:-85px;
+     }
+
+     .list i{
+         width: 20px; /**这是设置123的*/
+         height: 20px;
+         border-radius:50%;
+         background-color: #fff;
+         color: #333;
+         float: left;
+         font-style:normal;
+         line-height: 20px;
+         font-size: 14px;
+         text-align: center;
+         margin-right:10px;
+         cursor: pointer;
+
+     }
+
+     .list i.current{
+         background-color: skyblue; /*这是设置下面1234角标颜色的*/
+         color: #fff;
+     }
+
+     .arrow{
+         position: absolute;
+         width: 100%;
+         top: 50%;
+         margin-top:  -30px;
+     }
+
+     .arrow-left, /*这是设置轮播箭头的*/
+     .arrow-right{
+         width: 30px;
+         height: 60px;
+         position: absolute;
+         font: 20px/60px "consolas";
+         color: #fff;
+         background-color: rgba(0, 0, 0, .3);
+         text-align:center ;
+         cursor: pointer;
+
+     }
+
+     .arrow-right{
+         right: 0;
+     }
+
+ </style>
+<script>
+//获取DoM
+var yuan = document.querySelectorAll("i");  //点击控制图片的切换
+var li = document.querySelector("ul li");
+var ul = document.querySelector("ul");
+var imgs = document.querySelector("#imgList");
+var right = document.querySelector(".arrow-right");
+var left = document.querySelector(".box");
+window.onload = function () {
+    //这里是点击圆圈切换图片
+
+    for (var i = 0; i < yuan.length; i++) {
+        yuan[i].num = i;
+        yuan[i].onmouseovr = function () {      //注册事件
+            //下面要将循环除样式移除
+            for (var j = 0; j < yuan.length; j++) {
+                yuan[j].classList.remove("current");
+            }
+            //这里是为了将小圆点增加上样式
+            this.classList.add("current");
+            var num = this.num;
+            //到这里我们将要做的是点击小圆图就进行移动,像左边移动和上面的css一样的功能
+            //圆的定位    移动的距离就是N 乘以一张图片的宽度
+            //N就是选择的小圆点的坐标----i(num)
+            //图片的宽度box.offsetWidth, left
+            var left = num * li.offsetWidth;
+            console.log(num, box.offsetWidth, left);
+            imgs.style.left = `-${left}px`;
+            //这里小圆点联动左右按钮
+            for (var p = 0; p < yuan.length; p++) {
+                //清除全部样式(小圆点)
+                yuan[p].classList.add("current");
+            }
+
+            //给当前的小圆点增加样式
+            yuan[num].classList.add("current");
+            //这里这个位置比较关键,在上面设置完样式之后,记得将此num值给全局的i
+            index = this.num
+        }
+    }
+    //-----以上是点击小圆圈切换图片
+    //-----下面是开始右面老伯控制图片切换
+    // 首先定义一个全局的index,这个index的作用依旧是控制图片的切换
+    var index = 0;
+    right.onclick = function () {
+        index++;
+        //这里要对index做一个判断该,如果那点击一下index就会不停的增大
+        if (index === ul.children.length) {
+            //如果显示坐标为6的话,显示应该显示第一张图片,所以要复位即index=0
+            index = 0;
+        }
+        var left = index * li.offsetWidth;
+        console.log(index, box.offsetWidth, left);
+        imgs.style.left = `-${left}`;
+
+        //点击右面增加联动小圆的效果
+        for (var n = 0; n < yuan.lenth; n++) {
+            //清除全部的小圆样式
+            yuan[n].classList.remove("current");
+        }
+        //给当前的小圆增加样式
+        yuan[index].classList.add("current")
+    };
+    //-------以上结束右面轮播,控制图片的切换
+
+    //-------下面是开始左面轮播,控制图片切换
+    left.onclick = function (){
+    index--;
+    //这里同右点击一样,需要做一下判断,
+    console.log(index);
+    if (index === -1) {
+        index = ul.children.length - 1;
+    }
+    var left = index * li.offsetWidth;
+    console.log(index, box.offsetWidth, left);
+    imgs.style.left = `-${left}px`;
+    //这个位置做的是左边点击联动的小圆
+    for (var m = 0; m < yuan.length; m++) {
+        //清除全部样式小圆点
+        yuan[m].classList.add("current");
+    }
+    //给当前小圆增加样式
+    yuan[index].classList.add("current");
+
+};
+
+        //-----上面是结束左面轮播,控制图像切换
+        //------下面开始设置自动轮波
+        var time = setInterval(function () {
+            right.onclick();
+        }, 1000);
+        //----以上是自动轮播结束
+        //---下面设置鼠标进来就停止开始
+        box.onmouseover = function () {
+          clearInterval(time);
+        };
+        //设置鼠标进来就停止结束
+        //设置鼠标出去就停止开始
+        box.onmouseout = function () {
+            time = setInterval(function() {
+                right.onclick();
+            }, 1000);
+
+        }
+}
+</script>
+</html>

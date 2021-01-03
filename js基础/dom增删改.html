@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="btnList">
+   <div><button id="btn01">创建一个"广州节点,添加到city下"</button></div>
+   <div><button id="btn02">创建一个"广州节点,添加到#bj下"</button></div>
+   <div><button id="btn03">使用"广州替换"#bj节点</button></div>
+   <div><button id="btn04">删除#bj节点</button></div>
+   <div><button id="btn05">读取#city内的HTML代码"</button></div>
+   <div><button id="btn06">设置#bj内的HTML代码"</button></div>
+  </div>
+<div>
+    <ul id="city">
+        <li id="bj">北京</li>
+        <li>上海</li>
+        <li>东京</li>
+        <li>首尔</li>
+    </ul>
+</div>
+</body>
+<script>
+  window.onload = function () {
+   //创建一个创建一个"广州节点,添加到city下"
+      //首先绑定一个点击事件
+      myClick('btn01',function () {
+          //第一步创建广州节点<li>广州</li>
+          //创建li元素节点
+          // document.createElement()
+          var li = document.createElement("li")
+         // 创建广州文本节点
+          var gzText = document.createTextNode("广州")
+          //将广州这个子节点设置为li的子节点,将上面的拼接到一起
+          li.appendChild(gzText)
+          // 获取id为city的节点
+          var city = document.getElementById("city")
+          // 最后将广州添加到city下接下来就是把li给添加到页面上去了
+          city.appendChild(li)
+
+
+
+   //读取#city内的HTML代码"
+   //设置#bj内的HTML代码"
+  });
+      //使用广州节点插入到#bj前面
+      myClick("btn02",function () {
+          //创建一个广州   
+          var li = document.createElement("li");
+          var gzText = document.createTextNode("广州");
+          li.appendChild(gzText);
+          //获取id为北京的节点
+          var bj = document.getElementById("bj");
+          var city = document.getElementById("city")
+          // 节点插入
+          city.insertBefore(li, bj);
+
+      });
+      //使用"广州替换"#bj节点
+      // 首先绑定事件
+      myClick("btn03",function () {
+          // 获取li
+        var li = document.createElement("li")
+          //获取广州
+        var gzText = document.createTextNode("广州")
+          //拼接
+        li.appendChild(gzText)
+
+          // 获取id为bj的节点
+          var bj = document.getElementById("bj")
+
+          //获取city
+          var city = document.getElementById("city")
+
+          //最后替换
+          city.replaceChild(li, bj);
+
+      });
+
+      //删除#bj节点
+      myClick("btn04",function () {
+          //获取id为bj的节点
+          var bj = document.getElementById("bj");
+
+          // 获取city
+          var city = document.getElementById("city");
+          //删除节点
+          // city.removeChild(bj)
+          //另外一种情况只知道bj节点不知道其他的但是要删除这个节点,因为这种方法要获取到他的父元素
+          //方法
+          bj.parentNode.removeChild(bj)
+      });
+  function myClick(idStr,fun) {
+      var btn = document.getElementById(idStr);
+      btn.onclick = fun
+  }
+}
+</script>
+</html>

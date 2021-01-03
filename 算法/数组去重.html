@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+</head>
+<body>
+
+</body>
+<script>
+//创建数组
+var arr = [1,2,3,2,1,3,4,2,5];
+
+//去除数组中的重复数字
+//获取数组中的每一个元素,遍历
+for(var i =0; i<arr.length; i++) {
+    //获取当前元素后的所有元素也就是用1去比的话获取他之后的的所有元素用它一个一个的比以此类推
+    for(var j=i+1; j<arr.length; j++){
+        //判断两个元素的值是否相等
+        if(arr[i] === arr[j]){
+            //如果相等则证明出现了重复的元素,则删除j对应的元素
+            arr.splice(j,1);
+            //当删除了当前j所在的元素以后,后边的元素会自动填充补位
+            //此时将不会比较这个元素,我们需要再比价一次j所在位置的元素
+            //使j自减
+            j--
+        }
+    }
+}
+ return arr[i];
+
+</script>
+</html>

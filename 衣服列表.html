@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 衣服列表</title>
+</head>
+<body>
+ <img src="img/下载.jpg" >
+ <ul>
+     <li class="active">
+         <a href="">
+             <img src="img/下载.jpg"  width="70" class="smallImg">
+         </a>
+     </li>
+
+     <li>
+         <a href="">
+             <img src="img/下载2.jpg"  width="50" class="smallImg">
+         </a>
+         </a>
+     </li>
+
+     <li>
+         <a href="">
+             <img src="img/下载3.jpg"  width="50" class="smallImg">
+         </a>;
+         </a>
+     </li>
+
+     <li>
+         <a href="">
+             <img src="img/下载4.jpg"  width="50" class="smallImg">
+         </a>
+         </a>
+     </li>
+
+     <li>
+         <a href="">
+             <img src="img/下载1.jpg"  width="50" class="smallImg">
+         </a>
+         </a>
+     </li>
+ </ul>
+</body>
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        overflow: hidden; /* 清除浮动的影响 */
+    }
+    ul li{
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin-left: 30px; /* 左右间距为10px margin是设置两个元素间距离的 */
+        margin-top: 20px;
+        border:2px solid #fff;
+    }
+    ul li.active{
+        border-color: red;
+    }
+    ul li a img{
+       width: 100%;
+       height: 80px;
+    }
+</style>
+<script>
+//获取事件源
+var bigImg = document.getElementById('bigImg');
+var smallImgs = document.getElementsByClassName('smallImg');
+
+//遍历这个集合,为什么要遍历呢,因为要遍历每一个img标签,要给他添加一个事件
+   for (var i=0; i<smallImgs.length; i++){
+       //遍历集合,给每一个img标签添加事件
+       smallImgs[i].onmouseover = function () {
+           //在悬浮到每一个li标签之前,先把所有的li标签的类名都置为空值
+           for (var j=0; j<smallImgs.length; j++){
+             smallImgs[j].parentNode.parentNode.setAttribute('class','')
+           }
+           /*鼠标碰触到图片图片的大图就会切换,
+           *其实我们只要修改src属性值然后把值赋给他就可以了
+           * 首先我们要修改大图属性
+           * 其次赋值
+           *
+           *
+           * */
+           //修改大图属性,获取小图
+           var smallImgSrc =  this.getAttribute('src');
+          // console.log(smallImgSrc );
+           //修改src并且赋值
+           bigImg.setAttribute('src',smallImgSrc);
+        //给鼠标悬浮的img标签的父标签添加类,parentNode这是dom里面的操作
+           this.parentNode.parentNode.setAttribute('class', 'active')
+
+       }
+   }
+</script>
+
+</html>

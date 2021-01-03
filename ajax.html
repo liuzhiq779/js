@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ajax.js"></script>
+</head>
+
+<body>
+    <input type="button" value="获取数据" id="btn1">
+</body>
+<script>
+    window.onload = function() {
+        var oBtn = document.getElementById('btn1');
+        oBtn.onclick = function() {
+            //第一个a.txt是请求地址,后面的data是参数,+math.random是因为一个地址只能请求一次加上他可以自动拼接
+            ajax('a.txt?t=' + Math.random(), function(data) {
+                var arr = JSON.parse(dta) //把data数据拿出来
+                    //后面的事情就和ajax无关了,剩下的就是拼接DOM了
+                for (var i = 0; i < arr.lenth; i++) {
+                    //这里的每一条数据就是一个li
+                    var oLi = document.createElement('li');
+                    //后面就拼接href连接和标题,innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML。
+                    oLi.innerHTML = '<h2><a href=" ' + arr[i].href + '">' + arr[i].title + ' </a></h2>';
+                    // appendChild() 方法可向节点的子节点列表的末尾添加新的子节点。
+                    //提示：如果文档树中已经存在了 newchild，它将从文档树中删除，
+                    //然后重新插入它的新位置。如果 newchild 是 DocumentFragment 节点，则不会直接插入它，而是把它的子节点按序插入当前节点的 childNodes[] 数组的末尾。
+                    //你可以使用方法移除元素到另外一个元素。
+                    var oNewUl = document.createElement('ul');
+                    var arr2 = arr[i].child;
+                    for (var j = 0; j < arr.length; j++) {
+                        var oNewLi = document.createElement('li');
+                        oNewLi.innerHTML = '<a href="' + arr2[j].href + '"> ' + arr[j].title + '</a>';
+                        //拼接完字符串最后把他扔到ONewUl.appendChild()里面去,把onewLi扔到里面去
+                        //意思就是ul扔完在li中,li在扔到最外面的ul中
+                        oNewUl.appendChild(oNewli)
+                        oNewLi.appendChild(oNewUl)
+                    }
+                    oUl.appendChild(oLi);
+                }
+                333
+
+                 
+            }, function(data) {
+                alert("失败")
+            });
+        };
+    }
+</script>
+
+</html>

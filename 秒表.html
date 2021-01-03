@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>秒表</title>
+</head>
+<body>
+<div class="contain">
+    <span id="interval">11:12:00</span>
+</div> &nbsp;&nbsp;<button id="pause">暂停</button>&nbsp;&nbsp;
+<button id="action">开始</button>
+  <script>
+   //获取日期对象
+  function getData() {
+    dobj = new date();
+    hour = dobj.getHours(); //时
+    minute = dobj.getMinutes(); //分
+    second = dobj.getSeconds();//秒
+    str = hour + ":" + minute + ":" + second;
+    dsq = document.getElementById("Interval"); //获取id Interval
+    dsq.innerHTML = str;
+  }
+
+    //未点击按钮前,先执行一次
+  getDate();
+  start();
+
+  //开始函数
+
+  function start() {
+      sobj = setInterval(getDate,1000); //设置定时器,一秒钟执行一次getDate
+  }
+
+  //停止函数
+  function stop() {
+      clearInterval(sobj); //清除定时器
+  }
+  //关闭按钮
+  c = document.getElementById("pause")
+  c.onclick = function () {
+      stop();
+  }
+  //开始按钮
+  action = document.getElementById("action");
+  action.onclick = function () {
+      start();
+  }
+  </script>
+</body>
+</html>

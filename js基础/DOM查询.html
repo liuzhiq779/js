@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn04">点击</button>
+   <div id="total">
+       <div class="inner">
+           <p>
+               你喜欢那个城市
+           </p>
+            <ul id="city">
+                <li id="bj">北京</li>
+                <li>上海</li>
+                <li>北京</li>
+                <li>首尔</li>
+            </ul>
+       </div>
+   </div>
+   <script>
+
+   //用下面的方法你会出现非常多的重复性代码,不过我们可以把他提取出来我们可以创建一个方法和函数
+   //idStr 要绑定的单击响应函数的对象的id属性值
+   //fun 事件回调函数,单击对象元素时,该函数将会被触发
+   function myClick(idStr, fun) {
+       var btn = document.getElementById(idStr)
+       // btn.onclick = function () {
+       //     //查找节点
+       //     var bj = document.getElementById("bj");
+       //     //打印bj
+       //     alert(bj.innerHTML) 下面的就相当于他了
+       // };
+       btn.onclick = fun
+   }
+
+   myClick("btn07", function() {
+       //这个相当于调用用了myClick这个方法方法里面有两给参数
+       //获取id为bj的节点
+       var bj = document.getElementById("bj")
+       //返回bj父节点
+       var pn = bj.parentNode;
+       alert(pn.innerHTML)
+   })
+    var btn04 = document.getElementById("btn04")
+      btn04.onclick = function () {
+          //获取id为city的元素
+          var city = document.getElementById("city");
+
+          //查找# city下面所有的li节点
+          document.getElementsByTagName("li");
+
+          //通过循环遍历的形式把他展示出来
+          for (var i=0; i<lis.length; i++) {
+              alert(lis[i].innerHTML);
+          }
+
+      };
+
+    //为id为btn05的按钮绑定一个单击响应函数
+    var btn05 = document.getElementById("btn05");
+    //返回# city的所有子节点
+      var cns = city.childNodes; //childNodes属性会获取包括文本节点在内的所有节点,根据DOM标准,标签间的空白页会当成文本节点
+       //alert(cns.length);
+      for(var i=0; i<cns.length; i++) {
+          alert(cns[i]);
+      }
+      var cns2 = city.childeren;
+      alert(cns2.length);
+   </script>
+</body>
+</html>

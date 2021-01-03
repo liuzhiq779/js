@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="post" action="">
+      你爱好运动吗?<input type="checkbox" id="checkedAllBox" /> 全选/全不选
+
+       <br/>
+      <input type="checkbox" name="items" value="足球" />足球
+      <input type="checkbox" name="items" value="篮球" />篮球
+      <input type="checkbox" name="items" value="羽毛球" />羽毛球
+      <input type="checkbox" name="items" value="兵兵球"/>兵兵球
+      <br>
+      <input type="button" id="checkedAllBtn" value="全选">
+      <input type="button" id="checkedNoBtn" value="全不选">
+      <input type="button" id="checkedRevBtn" value="反选">
+      <input type="button" id="sendBtn" value="提交">
+  </form>
+</body>
+<script>
+ window.onload = function () {
+     var items = document.getElementsByName("items"); //把他设置为全局变量
+   //事件checkedAllBtn, /功能全选按钮.点击选择全部选中
+     //为id 为checkedAllBtn的按钮绑定一个单击响应函数
+     var checkedAllBtn = document.getElementById("checkedAllBtn");
+     checkedAllBtn.onclick = function () {
+
+         //获取四个多选框items
+         // var items = document.getElementsByName("items"); 为了方便
+
+         //然后在这里把他变成选中状态在这里设置四个多选框变成选中状态
+         //怎么选择呢他们是数组的形式我们可以用遍历的方法
+          //遍历item
+         for(var i=0; i<items.length; i++){
+             //设置四个选中状态
+             //通过多选择框的checked的可以获取和设置多选框的状态,flase就是不选中
+             items[i].checked = true
+         }
+         checkedAllBox.checked = true
+
+     }
+   //checkedNoBtn
+     //全都不选,点击按钮以后四个多选框都变成没有选中的状态
+     //为id为checkedNoBtn的按钮绑定一个单击响应函数
+      var checkedNoBtn = document.getElementById("checkedNoBtn");
+      checkedNoBtn.onclick = function () {
+
+
+          //将四个多选择框设置为没有选中 的装态
+          //var items = document.getElementsByName("items"); 设置全局变量这样就不需要每次在每一个函数来里面都需要设置
+
+          //遍历
+          for(var i=0; i<items.length; i++) {
+              items[i].checked = false
+          }
+          checkedAllBox.checked = false
+       }
+
+   //checkedRevBtn
+     //点击选中的变成没有选中 ,没有选中的变成选中
+     //首先获取对象
+     var checkedRevBtn = document.getElementById("checkedRevBtn")
+     //其次绑定事件
+     checkedRevBtn.onclick = function () {
+          //循环遍历
+         for (var i=0; i<items.length; i++) {
+            // //判断多选框的状态
+            //  if(items[i].checked){
+            //      //如果是这么多选框被选中,则设置为没有选中的状态
+            //      items[i].checked = false
+            //  }  else {
+            //      items[i].checked = true; //意思是当为true的时候状态为false,当状态为flase的时候状态为true
+            //  }
+             //上面的方法有些笨,我们其实操作的是items的状态,可以用取反的方法,让他自己等于自己
+             items[i].checked = !items[i].checked
+         }
+
+         //在反选中的时候也要判断四个是否全部选中
+         checkedAllBox.checked = true;
+         for (var j = 0; j < items.length; j++) {
+             //判断四个多选框是否全选
+             //只要一个没有选中则就不是全选
+             if (!items[j].checked) {
+                 //一旦进入判断,则证明不是全选状态
+                 //将checkedAllBox.checked设置为没选中状态
+                 checkedAllBox.checked = false;
+             }
+         }
+     }
+   //sendBtn 提交按钮
+       //--点击按钮以后弹出value属性值
+     //首先获取事件
+     var sendBtn = document.getElementById("sendBtn")
+     //其次为事件绑定点击事件
+     sendBtn.onclick = function () {
+         //遍历items
+         for (var i =0; i<items.length; i++) {
+             //在这里首先判断多选框是否选中
+             if (items[i].checked) {
+                 alert(items[i].value)
+             }
+         }
+     }
+
+   // checkedAllBox
+     //一样的套路获取节点绑点事件 全部选中
+    var checkedAllBox = document.getElementById("checkedAllBox")
+     checkedAllBox.onclick = function () {
+          // 设置多选框的选中状态
+         for(var i=0; i<items.length; i++){
+             items[i].checked = checkedAllBox.checked;
+         }
+         // checkedAllBox.checked = false
+     }
+
+ /*items
+ *
+ * 如果四个多选框全选中,则checkedAllBox也应该选中
+ * 如果四个多选框都没有选中,则checkedAllBox也不应该选中
+ * */
+   //为四个多选择框绑点点击响应函数
+     for(var i=0; i<items.length; i++) {
+         //选择点击多选框就会触发函数
+         items[i].onclick = function () {
+             //开始默认是全部选中
+             checkedAllBox.checked = true;
+             for (var j = 0; j < items.length; j++) {
+                 //判断四个多选框是否全选
+                 //只要一个没有选中则就不是全选
+                 if (!items[j].checked) {
+                     //一旦进入判断,则证明不是全选状态
+                     //将checkedAllBox.checked设置为没选中状态
+                     checkedAllBox.checked = false;
+                 }
+             }
+         }
+     }
+ }
+</script>
+</html>

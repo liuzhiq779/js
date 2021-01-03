@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>匹配电话号码</title>
+
+</head>
+<body>
+<input class="phone" type="number" name="number" placeholder="请输入号码">
+ <h1>正则匹配电话号码</h1>
+</body>
+<script>
+inobj = document.getElementById('input');
+
+  phone='13876457355';
+  if (phone.match(/^138+(\d{8} + $/g)) {
+      alert('电话匹配成功');
+  } else {
+      alert('匹配失败')
+  }
+</script>
+</html>

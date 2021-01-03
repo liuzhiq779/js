@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小说换肤功能</title>
+    <!--
+   需求:
+        点击不同的按,切换不同的样式
+        点击白天
+        背景比较颜色变红,字体变小
+        背景颜色编程黑色,字体 变大
+        方案:
+        1. 做一个页面有连个按钮
+        2.点击按钮 能够触发事件
+        3. 点击不同的按钮,改变不同的样式
+        第三部获取document.body
+-->
+</head>
+<body>
+<!--首先来两个按钮-->
+<!--第三步定义触发事件-->
+  <input type="button" value="白天" onclick="showDay()">
+  <input type="button" value="夜间" onclick="showNight()">
+<!--然后划分主体页面-->
+    <div id="div1">
+     仰天大笑出门去,我辈岂是蓬蒿人
+    </div>
+
+
+
+</body>
+<style type="text/css">
+   div{
+       width: 200px;
+       height: 236px;
+       background: blue;
+   }
+    .day {
+        /*这是一个class类选择器下面的函数就用这个选择器做触发事件*/
+        background: red;
+        font-size: 12px;
+    }
+    .night{
+        background: black;
+        font-size: 24px;
+    }
+</style>
+
+<script>
+  /*定义触发函数*/
+    function showDay() {
+       /*获取body触发事件换背景颜色和字体*/
+    // document.body.style.background = 'red'; 这是一种比较难以维护的方法用下面的方法函数直接获取css样式
+    // document.body.style.fontSize = '12px';  然后触发换肤事件
+       document.body.className = 'day' ;
+    }
+
+    function showNight() {
+    // document.body.style.background = 'black';
+    // document.body.style.fontSize = '22px';
+       document.body.className = 'night';
+
+    }
+</script>
+</html>

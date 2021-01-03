@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <div id="outer">
+   <!--设置提示文字,动态添加信息当前是第几张一个有多少张  -->
+   <p id="info"></p>
+       <img src="img/0.jpg">
+       <button id="prev">上一张</button>
+       <button id="next">下一张</button>
+   </div>
+
+</body>
+<script>
+  window.onload = function () {
+  /*点击按钮切换图片*/
+   //首先获取两个按钮
+   var prev = document.getElementById("prev");
+   var next = document.getElementById("next");
+
+
+
+   //要更换图片就是要切换图片的src
+   //获取图片
+      var img = document.getElementsByTagName("img")[0]; //这个方法返回的是数组
+      //如果要进行五张图片的切换,就不能用原新的方法,这里我们用一个数组进行保存图片的路径
+      var imgArr = ["img/0.jpg ","img/1.jpg ","img/2.jpg ","img/3.jpg ","img/4.jpg "];
+      //创建一个变量来保存当前正在显示的图片索引
+      var index = 0;
+      //设置id为info元素,获取元素index
+      var info = document.getElementById("info");
+      //然后设置元素给他赋值
+      // info.innerHTML = "一共" +imgArr.length+ "图片,当前是" +(index+1)+ "张"; //这里没有反应是因为吗点击事件
+   //分别为俩个按钮绑定单击响应函数index
+      prev.onclick = function () {
+      //切换到上一张图片,索引自减
+          //这样还有一个问index题那就是当超出数组里面图片数量的时index候他就会出现报index错
+          //解决方法
+          index--;
+          if(index < 0) {indexindex
+              //index = 0 这给是实现点第一张 不会东的
+              index = imgArr.length -1; //这样做就会形成循环点第一张的上一张就回到最后一张
+          }
+          // index--;
+          img.src = imgArr[index];
+          //当点击的时候上面的页数条码会跟着懂
+          info.innerHTML = "一共" +imgArr.length+ "图片,当前是" +(index+1)+ "张";
+
+      };
+      next.onclick = function () {
+          //切换图片就是修改img的src属性
+          //修改一个元素的属性方法=元素.属性 = 属性值
+          //img.src = "img/2.jpg"
+          //切换到上一张图片,自减index增
+          index++;
+          if(index > imgArr.length -1) {  //length是最大长度加一所有需要减1
+              // index = imgArr.length -1;
+              index = 0;
+          }
+
+          img.src = imgArr[index];
+          info.innerHTML = "一共" +imgArr.length+ "图片,当前是" +(index+1)+ "张";
+
+      }
+
+  }
+</script>
+ <style type="text/css">
+   *{
+       margin: 0;
+       padding: 0;
+   }
+
+     #outer{
+         width: 230px;
+         height: 400px;
+         margin: 50px auto;
+         /*设置离上部的距离*/
+         padding: 10px;
+         /*设置文本居中*/
+         text-align: center;
+         background-color: greenyellow;
+     }
+ </style>
+</html>

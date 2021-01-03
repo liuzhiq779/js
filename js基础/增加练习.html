@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <table id="employeeTable" border="1" soil width="50%">
+      <tbody>
+      <tr>
+          <td>name</td>
+          <td>Email</td>
+          <td>Salar</td>
+          <td>&nbsp</td>
+      </tr>
+      <tr>
+          <td>Tom</td>
+          <td>tom@tom.com</td>
+          <td>5000</td>
+          <td><a href="deleEmp?id=001">Delete</a></td>
+      </tr>
+      <tr>
+          <td>jerry@sohu.com</td>
+          <td>8000</td>
+          <td><a href="deleEmp?id=002">Delete</a></td>
+      </tr>
+      <tr>
+      <tr>
+          <td>Tom</td>
+          <td>tom@tom.com</td>
+          <td>5000</td>
+          <td><a href="deleEmp?id=003">Delete</a></td>
+      </tr>
+      <tr>
+          <td>bob@sohu.com</td>
+          <td>10000</td>
+          <td><a href="deleEmp?id=004">Delete</a></td>
+      </tr>
+      </tr>
+      </tbody>
+  </table>
+ <table>
+     <tbody>
+     <tr>
+         <td class="word">name: </td>
+         <td class="inp">
+             <input type="text" name="empName" id="empName"/>
+         </td>
+     </tr>
+     <tr>
+         <td class="word">email</td>
+         <td class="inp">
+             <input type="text" name="email" id="email"/>
+         </td>
+     </tr>
+     <tr>
+         <td class="word">salary</td>
+         <td class="inp">
+             <input type="text" name="salary" id="salary"/>
+         </td>
+     </tr>
+     </tbody>
+ </table>
+  <button type="submit" style="margin-left: 80px">提交</button>
+</body>
+<script>
+ window.onload = function () {
+ //点击超链接以后删除信息
+
+// 获取所有超链接
+     var allA = document.getElementsByTagName('a')
+//为每个超链接都绑点一个单击响应函数
+     for (var i = 0; i < allA.length; i++) {
+         allA[i].onclick = function () {
+             // 点击超链接以后删除超链接所在的那行
+             //这里this点谁就是谁
+
+             // 下面就是操作tr了
+             // 1获取当前的tr
+             var tr = this.parentNode.parentNode;
+             // // 删除tr
+             // tr.parentNode.removeChild(tr);
+
+             // alert("确认删除吗?")
+             var flag = confirm("确认删除吗");
+             //如果用户点击确认
+              if (flag){
+                  //删除
+                  tr.parentNode.removeChild(tr);
+              }
+             return false
+         }
+     }
+ }
+</script>
+</html>

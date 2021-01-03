@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组遍历</title>
+</head>
+<body>
+
+</body>
+<script>
+var per = new Person("孙悟空",18);
+var per2 = new Person("猪八戒",28);
+var per3 = new Person("红孩儿",8);
+var per4= new Person("蜘蛛精",16);
+var per5= new Person("二郎神",38);
+/*
+*
+* 题目要求创建一个函数,可以将PerArr中的满18岁的
+* person提取出来然后封装到一个新的函数中并且返回
+*
+* arr
+*   形参,要提取信息的数组
+*
+* */
+ var perArr = [per, per2,per3,per4,per5,per6]
+
+ function getAdult(arr) {
+     //首先第一步创建一个新的数组接受参数
+     var newArr = [ ];
+
+     //其次遍历数组,获取arr中的person对象
+     for(var i=0;i < arr.length; i++){
+         var p = arr[i]; //上面把数组遍历之后得到数组里面所有的元素,之后把元素赋值给p
+         //在这之后进行判断
+         if(p.age >=18){
+             //如果大于18则将这个对象添加到newArr中
+             //用这个方法将对象放入数组中
+             newArr.push(p);
+         }
+     }
+
+
+     //获取到之后,判断age是否满足大于等于18,如果满足条件就将这个对象添加到newArr中
+
+
+     //将新的数组返回
+     return newArr;
+ }
+</script>
+</html>

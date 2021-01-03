@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this</title>
+    <!--
+       题目: flag算法又称扁平化算法,已知一个不规则的多维数组,输出扁平化的字符床如
+       arr=['a',['b','c'],2,['d','e','f'],'g',3,4]
+       需输出字符串a,b,c,2,d,e,f,g,3,4
+
+    -->
+</head>
+<body>
+
+</body>
+<script>
+//toString方法
+var arr = ['a',['b','c'],2,['d','e','f'],'g',3,4];
+function flag(array) {
+    let toString = Array.prototype.toString;
+    Array.prototype.toString = function ( ) {
+        return  this.join(',')
+
+    }
+    consolo.log(arr + "")
+    Arry.prototype.toString = toString
+}
+flag()
+</script>
+</html>

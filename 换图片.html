@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换图片</title>
+</head>
+<body>
+<img id="light" src="img/08.jpg.">
+<script>
+ i = 0;
+ imgid = document.getElementById("light");
+ imgid.onclick = function () {
+    if (i%2==0) {
+        imgid.src="img/on.jpg"; //换图
+    }  else {
+        imgid.src="img/off.jpg" //点击换回来
+    }
+    i++;
+ }
+</script>
+</body>
+</html>
