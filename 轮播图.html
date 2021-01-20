@@ -9,7 +9,7 @@
     <div class="inner" id="inner">
         <ul id="imgList">
             <li>
-                <a herf="#"><img src="img/01.jpg" alt=""></a>
+                <a href="#"><img src="img/01.jpg" alt=""></a>
             </li>
             <li>
                 <a href="#"><img src="img/02.jpg" alt=""></a>
@@ -65,7 +65,10 @@
          margin: 100px auto;
 
      }
-
+     img{
+       width: 400px;
+       height: 300px;
+     }
      .inner{
          position: relative;
          overflow: hidden;
@@ -118,8 +121,7 @@
          margin-top:  -30px;
      }
 
-     .arrow-left, /*这是设置轮播箭头的*/
-     .arrow-right{
+     .arrow-left,.arrow-right{
          width: 30px;
          height: 60px;
          position: absolute;
@@ -131,9 +133,9 @@
 
      }
 
-     .arrow-right{
-         right: 0;
-     }
+     /*.arrow-right{*/
+         /*right: 0;*/
+     /*}*/
 
  </style>
 <script>

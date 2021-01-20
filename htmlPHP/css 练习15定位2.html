@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+<style>
+.box{
+    width: 400px;
+    height: 500px;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+    img{
+        width: 400px;
+        height: 500px;
+    }
+    ul,ol{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    input{
+        width: 50px;
+        height: 50px;
+        background: #f00;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    ol{
+        position: absolute;
+        bottom: 20px;
+        width: 60px;
+        left: 50%;
+        margin-left: -30px;
+
+    }
+    ol li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        float: left;
+        /*这是设置li之间的间距*/
+        margin: 0 5px;
+    }
+</style>
 <body>
-$END$
+  <div class="box">
+    <ul>
+        <li><a href="#"><img src="img/下载.jpg"></a></li>
+        <li><a href="#"><img src="img/下载1.jpg"></a></li>
+        <li><a href="#"><img src="img/下载2.jpg"></a></li>
+    </ul>
+      <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ol>
+      <input type="button" value="<" class="left">
+      <input type="button" value=">" class="right">
+  </div>
 </body>
 </html>

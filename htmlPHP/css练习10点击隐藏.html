@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <title>点击隐藏</title>
 </head>
-<body>
+<style>
+ .box{
+     width: 150px;
+ }
+    .box div{
+        width: 48px;
+        height: 28px;
+        border: 1px solid #000;
+        float: left;
+    }
+    .box:after{
+        content:"";
+        display: block;
+        clear: both;
 
+        height: 0;
+        overflow: hidden;
+    }
+    .content{
+        border: 1px solid #000;
+        overflow: hidden;
+    }
+    .content,.c1,.c2,.c3{
+        width: 150px;
+        height: 150px;
+    }
+    .c1{
+        background: #f00;
+    }
+    .c2{
+        background: #0f0;
+    }
+    .c3{
+        background: #00f;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="b1"><a href="#d1">div1</a></div>
+    <div class="b2"><a href="#d2">div2</a></div>
+    <div class="b3"><a href="#d3">div3</a></div>
+</div>
+<div class="content">
+    <div class="c1" id="d1">div1</div>
+    <div class="c2" id="d2">div2</div>
+    <div class="c3" id="d3">div3</div>
+</div>
 </body>
 </html>
