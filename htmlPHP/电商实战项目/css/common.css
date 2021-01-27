@@ -1,0 +1,189 @@
+/* 清除间距 */
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+/* 清除列表样式 */
+li {
+    list-style: none;
+}
+/* 清除默认边框 */
+img,button,input {
+    border: 0;
+}
+/* 去掉表单元素的蓝色框 */
+input,textarea,button{
+	outline:none;
+}
+/* 去掉文本域的拉伸 */
+textarea{
+	resize:none;
+}
+/* 保证所有文字是正常的 */
+em, i, u {
+    font-style: normal;
+}
+/* 左浮动 */
+.fl {
+    float: left;
+}
+/* 右浮动 */
+.fr {
+    float: right;
+}
+/* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* 设置正文的字体和大小 */
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+}
+/* 清除a标签默认样式 */
+a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'microsoft yahei';
+}
+/* 版心 */
+.content{
+    width: 1200px;
+    margin: 0 auto ;
+}
+/* 容器 */
+.wrap{
+    width:100% ;
+}
+/* 顶部 */
+.top{
+    background: #f1f1f1;;
+}
+.top .content{
+    height: 30px;
+    line-height: 30px;
+}
+.top .content .tl{
+    width: 200px;
+    height: 30px;
+}
+.top .content .tl a:nth-child(2){
+    color: #666;
+}
+.top .content .tl a{
+   color: #c81623;
+}
+.top .content  .tr{
+    width: 700px; 
+    height: 30px;
+}
+.top .content  .tr ul li{
+  float: left;
+  
+ 
+}
+.top .content  .tr ul li a i.icnfont{
+  margin-left:10px;
+  position:relative;
+  top: 2px;
+}
+.top .content  .tr ul li span{
+    margin: 0 14px;
+}
+/* logo和搜索区域 */
+.logo-search .logo{
+    margin-top: 26px;
+}
+.logo-search .form{
+    margin-left: 170px;
+}
+.logo-search form{
+    width: 538px;
+    margin: 24px 0 0 0;
+    background: #c81623;
+    height: 36px;
+    margin-top: 25px;
+}
+.logo-search form input[type="text"]{
+  width: 444px;
+  height: 32px;
+  border: 2px solid #b1191a;
+  border-right:none ;
+  padding-left: 10px;
+  float: left;
+}
+.logo-search form input[type="submit"]{
+    width: 82px;
+    background: #b1191a;
+    float: left;
+    height: 36px; 
+    font-size: 16px;
+    color: #fff;
+    line-height:28px ;
+}
+.logo-search ul li{
+ float:left ;
+ margin: 0 12px;
+ line-height:28px ;
+}
+.logo-search ul li a.current{
+    color: #c81623;
+}
+.logo-search .cart {
+  width:138px ;
+  height:34px ;
+  border: 1px solid #dfdfdf;
+  margin-right: 62px;
+  margin-top: 24px;
+  position: relative;
+  line-height: 34px;
+}
+.logo-search .cart i{
+    margin-left: 18px;
+    color: red;
+}
+.logo-search .cart em{
+    margin-left: 14px;
+    position: relative;
+    top: 2px;
+}
+.logo-search .cart b{
+    display: block;
+    width: 16px;
+    height: 14px;
+    background: #e60012;
+    border-radius:50% ;
+    border-bottom-left-radius:0 ;
+    position: absolute;
+    right: 18px;
+    top: -4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height:14px ;
+}
+/* 导航部分 */
+.nav {
+    border-bottom: 2px solid #b1191a;
+    margin-top:24px;
+    line-height:44px;
+    font-size: 16px;
+}
+.nav .category{
+    width: 210px;
+    height: 44px;
+    background:#b1191a;
+    color: #fff;
+    text-align:center ;
+}
+.nav  ul li{
+    float: left;
+    margin: 0 26px;
+}
+.nav  ul li a{
+    color: #333;
+}
