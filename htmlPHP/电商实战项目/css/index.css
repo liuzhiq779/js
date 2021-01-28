@@ -183,8 +183,29 @@ height: 456px;
   line-height: 20px;
   height: 62px;
   border-left: 1px solid #ededed;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 .like .prolist ul li p b{
     color: #df3033;
+}
+/* 左侧固定定位 */
+.floor{
+    width: 66px;
+    position: fixed;
+    left: 0;
+    top: 30%;
+    margin-left: 80px;
+
+}
+.floor ul li{
+   height: 32px; 
+   line-height: 32px;
+   text-align: center;
+   border-bottom: 1px solid #ededed;
+}
+.floor ul li.current{
+    background: #c81623;
+}
+.floor ul li.current  a{
+    color: #fff;
 }
