@@ -152,3 +152,39 @@ height: 456px;
 .recommend-right ul li{
     float: left;
 }
+/* 猜你喜欢 */
+.like{
+    margin-top: 20px;
+}
+.like  .title h5{
+    float: left;
+    font-size: 18px;
+    color: #333;
+}
+.like .title>a{
+    float: right;
+    line-height: 34px;
+}
+.like .prolist ul{
+    border: 1px solid #ededed;
+}
+.like .prolist ul li{
+   float: left; 
+   width: 199px;
+   text-align: center;
+   margin-left: -1px;
+   
+}
+.like .prolist ul li p{
+  /* width: 120px;换一种方法
+  margin:0 auto ; */
+  padding-left: 30px;
+  padding-right: 40px;
+  line-height: 20px;
+  height: 62px;
+  border-left: 1px solid #ededed;
+  margin-bottom: 4px;
+}
+.like .prolist ul li p b{
+    color: #df3033;
+}
