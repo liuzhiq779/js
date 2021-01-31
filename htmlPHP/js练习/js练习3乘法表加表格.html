@@ -8,6 +8,16 @@
 <body>   
 </body>
 <script>
-     
+     document.write('<table border="1px soild">')
+       for(var i=1; i<=9; i++){
+        document.write('<tr>');
+            for(var j=1; j<=i; j++){
+                document.write('<td>')
+                document.write(j + '*' + i + '=' + i*j + '');
+                document.write('<td/>')
+            }
+        document.write('<tr/>')
+       }
+     document.write('<table/>')
 </script>
 </html>
