@@ -11,10 +11,11 @@
         <div class="countainer">
             <h1>傻逼东西</h1>
             <form>
-                <input type="text" name="userId" placeholder="输入账号" />
-                <input type="password" name="ps" placeholder="输入密码" />
-                <button type="submit">登陆</button>
+                <input type="text" class="userId" placeholder="输入账号" />
                 <button type="submit">注册</button>
+                <input type="password" class="ps" placeholder="输入密码" />
+                <button type="submit">登陆</button>
+            
             </form>
         </div>
     </div>
@@ -27,23 +28,40 @@
     
     .counter {
         background-color: bisque;
-        width: 100%;
+        width: 50%;
         /* div的高度 */
         height: 400px;
         /* 距离上面的距离 */
         top: 50%;
         /* 向上顶端的距离减200 */
-        margin: -200px;
-        position: absolute;
+        margin-top: 200px;
+        margin-left: 30%;
+        /* position: absolute; */
         overflow: hidden;
     }
     
-    .counter {
+    .countainer {
         text-align: center;
         height: 400px;
         max-width: 600px;
         margin: -10 auto 0 auto;
         padding: 20px;
+    }
+    .countainer form input{
+        display: block;
+        height: 20px;
+        border: 1px solid white;
+        border-radius: 30px;
+        margin: 10px  150px;
+        float: left;
+    }
+    .countainer form button{
+        height: 20px;
+        clear: both;
+        float: right;
+        margin-top: -20px ;
+        margin-right:100px ;
+        
     }
 </style>
 <script>
