@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // // 这是直接拼接的
+    // var arr =[100,200,300,'abc'];
+    // // 定义空字符串
+    // var total = '';
+    // // 循环 
+    // for(i=0;i<arr.length;i++){
+    // // 赋值拼接
+    //     total = total + arr[i] 
+    // }
+    // console.log(total)
+    //这是赋值拼接再加上 |例如100 |200
+    var arr = [100,200,300,'abcde'];
+    var str = '';
+    for(var i=0; i<arr.length;i++){
+        if(i == arr.length-1){
+            str = str + arr[i];
+        } else{
+            str = str + arr[i] + '|'
+        }
+    }
+    console.log(str)
+</script>
+</html>
