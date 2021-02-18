@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlPHP/梅栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/js练习画正三角形.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/js练习输出H5标签.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/三5数字输出.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlPHP/js练习/三5数字输出.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,23 +37,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>imgs</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="358" />
-    <option name="y" value="42" />
-    <option name="width" value="1345" />
-    <option name="height" value="875" />
   </component>
   <component name="ProjectId" id="1odmA0AsBQ3q0B9gHTTvkmxXjy0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,7 +79,7 @@
       <workItem from="1610160097734" duration="11660000" />
       <workItem from="1610246350092" duration="12837000" />
       <workItem from="1610335037272" duration="8035000" />
-      <workItem from="1613624726374" duration="421000" />
+      <workItem from="1613624726374" duration="7080000" />
     </task>
     <task id="LOCAL-00001" summary="这是第一次提交所有文件">
       <created>1609646025384</created>
