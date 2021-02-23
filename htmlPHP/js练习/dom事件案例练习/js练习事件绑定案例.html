@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="下载" id="btn">
+    <div>
+        <img src="img/1.jpg">
+        <img src="img/2.jpg">
+        <img src="img/3.jpg">
+        <img src="img/4.jpg">
+    </div>
+</body>
+<script type="text/javascript">
+ var btn = document.getElementById('btn');
+ //绑定事件
+ btn.onclick = function() {
+     //具体的处理
+     console.log('正在下载....')
+     //移除事件
+     btn.onclick = '';
+ }
+</script>
+<script>
+    //批量绑定事件
+    //给每个图片加上事件，点击每一张图片弹出对话框
+   var imgs = document.querySelectorAll('img');
+    console.log(imgs)
+    //遍历数组给每一个标签绑定事件
+    for(var i = 0; i<imgs.length;i++){
+        //给每一个Img标签绑定单击事件
+        //    imgs[i]
+        imgs[i].onclick = function (){
+            //alert('点我干啥')
+            this.style.width = '800px';
+        }
+    }
+</script>
+</html>
