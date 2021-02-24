@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="这是练习普通提交">
-      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习获取节点.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="这是获取节点练习的提交" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
