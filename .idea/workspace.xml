@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="这是练习普通提交">
+      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习获取节点.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +78,7 @@
       <workItem from="1610246350092" duration="12837000" />
       <workItem from="1610335037272" duration="8035000" />
       <workItem from="1613624726374" duration="7816000" />
+      <workItem from="1614209674608" duration="792000" />
     </task>
     <task id="LOCAL-00001" summary="这是第一次提交所有文件">
       <created>1609646025384</created>
@@ -123,5 +125,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="388" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613632548581" />
+    <state x="856" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614209839831">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="856" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614209839831" />
   </component>
 </project>
