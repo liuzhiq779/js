@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鹦鹉学舌</title>
+</head>
+<body>
+<input type="button" id="btn2" value="隔壁">
+<script></script>
+人说：<input type="text" id="input1">
+鹦鹉说：<input type="text" id="input2">
+<script>
+//第一个Input输入了内容，第二个跟着变内容改变的事件用oninput
+
+//先获取第一个input
+var input1 = document.getElementById('input1')
+//绑定oninput事件
+input1.oninput = function (){
+    //事件处理函数中，获取第一个input的内容
+    // （input的内容不是标签而是value属性值）
+    var str = input1.value;
+    //var str = this.value; //这里的this指的是input1
+     //console.log(str);
+    //获取第二个input
+    var input2 = document.getElementById('input2')
+//修改第二个input的内容(value属性值)
+    input2.value = str
+}
+
+</script>
+</body>
+</html>
