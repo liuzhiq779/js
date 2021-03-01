@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器案例</title>
+</head>
+<body>
+<script>
+//setTimeout 设置定时器，1s(1000ms)后输出hello
+setTimeout(function (){
+ console.log('hello')
+},3000)
+//方法二
+//function f1(){
+ //   console.log('hello')
+//}
+//setTimeout('f1()',3000)
+//清除定时器clearTimeout
+// var timeout = setTimeout(function (){
+//     console.log('hello')
+// },3000)
+//setInterval设置定时器 每隔多少毫秒执行一次
+//设置 每隔1000ms输出一次“起床啦”10次后清除
+var timer = setInterval(function (){
+    console.log('起床啦');
+    num++;
+    if (num===10){
+        //停止定时
+        console.log('马上停止啦')
+        clearInterval(timer);
+    }
+
+})
+</script>
+</body>
+</html>
