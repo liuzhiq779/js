@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="这是BOM浏览器对象模型的多个提交">
-      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/BOM/轮播图案例.html" afterDir="false" />
+    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="轮播图提交">
+      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/BOM/轮播图综合效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlPHP/js练习/BOM/鼠标悬停.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,8 @@
       <workItem from="1614390328833" duration="10654000" />
       <workItem from="1614478567647" duration="3654000" />
       <workItem from="1614490819623" duration="845000" />
-      <workItem from="1614552551696" duration="15282000" />
+      <workItem from="1614552551696" duration="15453000" />
+      <workItem from="1614653688169" duration="10062000" />
     </task>
     <task id="LOCAL-00001" summary="这是第一次提交所有文件">
       <created>1609646025384</created>
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614563692375</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="轮播图提交">
+      <created>1614577789187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614577789187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,25 +202,26 @@
     <MESSAGE value="这是商城案例1提交" />
     <MESSAGE value="事件委提交托和代理" />
     <MESSAGE value="这是BOM浏览器对象模型的多个提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="这是BOM浏览器对象模型的多个提交" />
+    <MESSAGE value="轮播图提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="轮播图提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="635" y="179" key="FileChooserDialogImpl" timestamp="1614565165125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="635" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614565165125" />
-    <state x="388" y="178" key="Vcs.Push.Dialog.v2" timestamp="1614563700461">
+    <state x="388" y="178" key="Vcs.Push.Dialog.v2" timestamp="1614577802410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="388" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614563700461" />
+    <state x="388" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614577802410" />
     <state x="958" y="278" key="run.anything.popup" timestamp="1614563089418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="958" y="278" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614563089418" />
-    <state x="857" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1614553695955">
+    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1614662154100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="857" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614553695955" />
+    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614662154100" />
     <state x="491" y="323" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1614397712271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
