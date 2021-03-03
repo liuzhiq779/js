@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name=" " onclick="f();" value="按钮">
+    <input type="button" id="btn" value="js绑定">
+    <input type="button" id="btn1" value="方法三">
+</body>
+<script type="text/javascript">
+//行内绑定事件 标签.onclick事件属性 =  js代码
+function f(){
+    alert(123);
+    console.log(456)
+}
+//js中通过标签的事件属性绑定，首先先获取标签属性
+// document.getElementById('btn').onclick = function() {
+//     alert('我是谢某人他爸爸')
+//     console.log('发大财')
+// }
+
+//方法二
+//先定义一个函数然后通过document.get获取标签最后让这个事件等于这个函数
+function f1() {
+    alert('我是谢某人他爸爸')
+    console.log('发大财')
+}
+var btn = document.getElementById('btn')
+btn.onclick = f1;
+//方法三用addEventListener
+ //先获取元素
+ document.getElementById('btn1').addEventListener('click',function(){
+    alert('我是谢某人他爸爸')
+    console.log('发大财')
+ })
+</script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一个筛子</title>
+</head>
+<style>
+    ul{
+        width: 250px;
+        height: 250px;
+        background-color: #cccccc; 
+        padding: 0;
+        list-style: none;
+        border-radius: 40px;
+        display: flex;
+    }
+    li{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .one{
+        justify-content: center;
+        align-items: center;
+    }
+    .two{
+        flex-direction:column ;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .three{
+        justify-content: space-around;
+    }
+    .three li:first-child{
+        margin-top: 10px;
+    }
+    .three li:nth-child(2){
+        align-self: center;
+    }
+    .three li:nth-child(3){
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+    .gtThree div{
+        flex: 1;
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
+<body>
+  <div>
+      <ul class="one">
+        <li></li>
+      </ul>
+      <ul class="two">
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="three">
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="gtThree four">
+          <div>
+              <li></li>
+              <li></li>
+          </div>
+          <div>
+              <li></li>
+              <li></li>
+          </div>
+      </ul>
+      <ul class="gtThree six">
+          <div>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+          <div>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+      </ul>
+  </div>
+</body>
+</html>

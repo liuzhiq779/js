@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击修改标签</title>
+</head>
+<body class="" id="body">
+<input type="button" value="开关" id="btn">
+<ul>
+    <li>网页开关灯效果</li>
+    <li>点击按钮修改P标签 内容</li>
+    <li>鹦鹉学舌</li>
+    <li>全选和全不选</li>
+    <li>隔行变色</li>
+</ul>
+<input type="button" id="btn2" value="隔壁">
+<p id="p">隔壁老刘</p>
+<!--<p>隔壁老刘</p>-->
+<!--<p>隔壁阿强</p>-->
+<!--<p>隔壁妹子</p>-->
+<!--<p>隔壁御姐</p>-->
+</body>
+<script></script>
+<script>
+//点击按钮，修改p标签中的内容
+//获取按钮
+var btn = document.getElementById('btn2')
+//绑定点击事件
+ btn.onclick = function (){
+    //事件处理函数中，获取P标签，修改内容
+     var p = document.getElementById('p');
+    // console.log(p.innerHTML)
+     p.innerHTML = '阿强'
+ }
+</script>
+</html>

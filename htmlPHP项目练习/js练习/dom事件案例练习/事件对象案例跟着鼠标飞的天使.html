@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跟着鼠标飞的天使</title>
+    <style>
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="跟我走吧" id="btn">
+<img src="img/11.jpg" id="tianshi" style="width: 50px;height: 50px">
+<script>
+//点击按钮，天使的图片跟着鼠标走鼠标到哪图片就到哪
+// 获取点击事件
+var btn = document.getElementById('btn')
+//绑定点击事件
+btn.onclick = function (e){
+//点击事件中
+//给整个窗口window绑定鼠标移动事件
+    window.onmousemove = function (){
+        console.log(123)
+//鼠标移动事件中
+        var e = e || window.event;
+        console.log(e)// e.pageX
+//获取鼠标在页面的横纵坐标
+        var x = e.pageX;
+        var y = e.pageY;
+//设置图片在页面的位置（横纵坐标）
+        document.getElementById("tianshi").style.left = x + 'px';
+        document.getElementById("tianshi").style.top = y + 'px';
+
+    }
+}
+
+</script>
+</body>
+</html>

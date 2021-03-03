@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件传播</title>
+    <style type="text/css">
+    div{
+        padding: 50px;
+    }
+    #div1{
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+    }
+    #div2{
+        width: 300px;
+        height: 300px;
+        background-color: green;
+    }
+    #div3{
+        width: 150px;
+        height: 150px;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javaScript">
+     document.getElementById('div1').onclick = function() {
+         alert('哈哈哈')
+     }
+      document.getElementById('div2').onclick = function() {
+          alert('嘿嘿嗨')
+      }
+      document.getElementById('div3').onclick = function() {
+          alert('啦啦啦啦')
+      }
+</script>
+</html>

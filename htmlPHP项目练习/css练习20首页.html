@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<style>
+  .box{
+      width: 200px;
+      height: 300px;
+      border: 1px solid #ff0000;
+      position: relative;
+      overflow: hidden;
+
+  }
+    .s1{
+        width: 200px;
+        height: 30px;
+        background: #eeeeee;
+        text-align: center;
+        line-height:30px;
+        position: absolute;
+        bottom: -31px;
+        transition: all 2s ease;
+    }
+    .box:hover .s1{
+        bottom: 0;
+    }
+</style>
+<body>
+  <div class="box">
+      <div class="s1">小滑块</div>
+  </div>
+</body>
+</html>

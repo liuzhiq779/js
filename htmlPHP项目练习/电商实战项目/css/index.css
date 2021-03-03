@@ -1,0 +1,211 @@
+/* css Document */
+/* banner广告区域 */
+/* 左边的广告分类 */
+.banner .banner-left{
+     width: 210px;
+     background: #c81623;
+     height: 466px;
+}
+.banner .banner-left ul li a{
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 30px;
+    display: block;
+}
+.banner .banner-left ul li a i.iconfont{
+    float: right;
+    margin-right:10px ;
+}
+.banner .banner-left ul li a:hover{
+    background:#fff ;
+    color: #c81623;
+}
+.banner .banner-left ul li a:hover i.iconfont{
+    color: #fff;
+}
+/* 中间的轮播图 */
+.banner .banner-center{
+    width:720px ;
+    height:456px ;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+}
+/* 右边部分 */
+.banner .banner-right{
+width: 249px;
+height: 456px;
+
+}
+.banner .banner-right .br-title{
+    border: 1px solid #e4e4e4;
+    margin-top: 10px;
+    border-bottom:dotted 1px #e8e8e7;
+    height: 32px;
+    line-height: 32px;
+}
+.banner .banner-right .br-title h4{
+ float: left;
+ font-weight: normal;
+ font-size: 14px;
+ margin-left:16px ;
+}
+.banner .banner-right .br-title a{
+  float: right;
+  margin-right:16px ;
+}
+.banner .banner-right .br-title a i.icnfont{
+    position: relative;
+    top: 1px;
+}
+.banner .banner-right  .br-newslist{
+    height: 124px;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 24px;
+    padding-top: 6px;
+    
+}
+.banner .banner-right  .br-newslist ul li{
+    margin-left: 14px;
+}
+.banner .banner-right .servcer{
+    height: 210px;
+    border-left: 1px solid #e4e4e4;
+
+}
+.banner .banner-right .servcer ul li{
+    float: left;
+    width: 61px;
+    height:70px ;
+    border-bottom: 1px solid #e8e8e7;
+    border-right: 1px solid #e8e8e7;
+}
+.banner .banner-right .servcer ul li a{
+    display: block;
+    width: 62px;
+    height: 20px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.banner .banner-right .servcer ul li:nth-child(1) a{
+    background: url(../images/icons.png);
+}
+.banner .banner-right .servcer ul li:nth-child(2) a{
+    background: url(../images/icons.png) -61px 0;
+}
+.banner .banner-right .servcer ul li:nth-child(2) a img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.banner .banner-right .servcer ul li:nth-child(3) a{
+    background: url(../images/icons.png) -123px 0;
+}
+.banner .banner-right .servcer ul li:nth-child(4) a{
+    background: url(../images/icons.png) -189px 0;
+}
+.banner .banner-right .servcer ul li:nth-child(5) a{
+    background: url(../images/icons.png) 0 -72px;
+}
+.banner .banner-right .servcer ul li:nth-child(6) a{
+    background: url(../images/icons.png) -61px -72px;
+}
+.banner .banner-right .servcer ul li:nth-child(7) a{
+    background: url(../images/icons.png) -123px -72px;
+}
+.banner .banner-right .servcer ul li:nth-child(8) a{
+    background: url(../images/icons.png) -189px -72px;
+}
+.banner .banner-right .servcer ul li:nth-child(9) a{
+    background: url(../images/icons.png) 0 -143px;
+}
+.banner .banner-right .servcer ul li:nth-child(10) a{
+    background: url(../images/icons.png) -61px  -143px;
+}
+.banner .banner-right .servcer ul li:nth-child(11) a{
+    background: url(../images/icons.png) -123px -143px;
+}
+.banner .banner-right .servcer ul li:nth-child(12) a{
+    background: url(../images/icons.png) -189px -143px;
+}
+
+.banner .banner-right>img{
+    margin-top: 3px;
+}
+/* 今日推荐 */
+.recommend{
+    margin-top:10px ;
+}
+.recommend-left{
+   width: 205px;
+   height:64px;
+   background:#5c5251 url(../images/clock.png) no-repeat center 30px;
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-top: 98px;
+
+}
+.recommend-right ul li{
+    float: left;
+}
+/* 猜你喜欢 */
+.like{
+    margin-top: 20px;
+}
+.like  .title h5{
+    float: left;
+    font-size: 18px;
+    color: #333;
+}
+.like .title>a{
+    float: right;
+    line-height: 34px;
+}
+.like .prolist ul{
+    border: 1px solid #ededed;
+}
+.like .prolist ul li{
+   float: left; 
+   width: 199px;
+   text-align: center;
+   margin-left: -1px;
+   
+}
+.like .prolist ul li p{
+  /* width: 120px;换一种方法
+  margin:0 auto ; */
+  padding-left: 30px;
+  padding-right: 40px;
+  line-height: 20px;
+  height: 62px;
+  border-left: 1px solid #ededed;
+  margin-bottom: 10px;
+}
+.like .prolist ul li p b{
+    color: #df3033;
+}
+/* 左侧固定定位 */
+.floor{
+    width: 66px;
+    position: fixed;
+    left: 0;
+    top: 30%;
+    margin-left: 80px;
+
+}
+.floor ul li{
+   height: 32px; 
+   line-height: 32px;
+   text-align: center;
+   border-bottom: 1px solid #ededed;
+}
+.floor ul li.current{
+    background: #c81623;
+}
+.floor ul li.current  a{
+    color: #fff;
+}
