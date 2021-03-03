@@ -19,242 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="轮播综合提交">
-      <change beforePath="$PROJECT_DIR$/htmlPHP/12框架的嵌套.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/cc练习13导航栏.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css 练习15定位2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css6练习微博导航栏.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css内容溢出.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习10点击隐藏.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习14定位例子.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习16固定定位案例.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习16轮播图.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习17层叠样式.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习18层叠样式.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习19动画过渡.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习20首页.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习21固定头部.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习22字穿效果.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习23一个骰子.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习24.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习25精灵图练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习4导航栏.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习5大视野图片布局.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习6搜索框.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习7鼠标元素.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习8宠物列表.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习9银杏叶背景图.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/css练习导航栏2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/index.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/下载.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/下载1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/下载2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/下载3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/下载银杏.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/按钮图标=0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/购物车图标.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/img/黑色背景=0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/index.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/BOM/轮播图案例.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/BOM/轮播图综合效果.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/BOM/鼠标悬停.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js案例this事件绑定练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习onchang和oninput练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习事件绑定案例.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习获取值焦点.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/js练习获取节点.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/事件传播.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/事件委托和代理.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/事件对象案例跟着鼠标飞的天使.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/全选案例.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/开关灯案例.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/点击按钮修改p标签内容.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/触行变色案例第二种方法.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/dom事件案例练习/鹦鹉学舌双向绑定.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js整除练4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习2，99乘法表.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习3乘法表加表格.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习toString方法.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习一个事件绑定2次.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习事件绑定.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习封装一个函数获取两个值的随机数.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习数组对象方法.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习显示隐藏和变色.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习画正三角形.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习获取dom元素.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习输出H5标签.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/js练习遍历对象成员.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/lz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/三5数字输出.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/数组遍历1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/数组遍历2求偶数和.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/js练习/数组遍历3之拼接字符串.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/作业1忆江南.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/作业练习2新闻表格.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/button_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/buy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/c1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/c2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/c3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/c4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/center-r2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/center.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/et_right_bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/footer_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/icon_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/input.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/li_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/phone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/s_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/serch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/sj.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/images/subtitle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/梅栏/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/ad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/b1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/b2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/b3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/banner1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/banner2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/banner3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/banner4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/bg_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/brand_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/car.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/cartPanelViewIcons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/checked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/delete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/disabled-next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/disabled-prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/duihuan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-b01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-b02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/floor-1-b03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/fs7805.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/interest06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/intro01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/intro02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/intro03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/jian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/like_06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/loginbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/quan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/regetype.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/s2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/s3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/sanjiao.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/secBuy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/secKill_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/state_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/today01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/today02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/today03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/today04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/images/wx_cz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/电商实战项目/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习10HTML框架.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习5表格1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习7表格简历.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/练习课程表9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/背景css练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/行高css.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/表单练习8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlPHP/表格练习2京东会员.html" beforeDir="false" />
-    </list>
+    <list default="true" id="c9ebe1c3-3ce0-4ad8-806d-89173d3eb3d6" name="Default Changelist" comment="轮播综合提交" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -321,7 +86,7 @@
       <workItem from="1614552551696" duration="15453000" />
       <workItem from="1614653688169" duration="10062000" />
       <workItem from="1614664209902" duration="101000" />
-      <workItem from="1614738867024" duration="11295000" />
+      <workItem from="1614738867024" duration="11748000" />
     </task>
     <task id="LOCAL-00001" summary="这是第一次提交所有文件">
       <created>1609646025384</created>
@@ -421,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614764984654</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="轮播综合提交">
+      <created>1614765311215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614765311215</updated>
+    </task>
+    <task id="LOCAL-00016" summary="轮播综合提交">
+      <created>1614765623392</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614765623392</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,10 +237,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="635" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614565165125" />
-    <state x="388" y="178" key="Vcs.Push.Dialog.v2" timestamp="1614765065863">
+    <state x="388" y="178" key="Vcs.Push.Dialog.v2" timestamp="1614765643321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="388" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614765065863" />
+    <state x="388" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614765643321" />
     <state x="958" y="278" key="run.anything.popup" timestamp="1614563089418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
