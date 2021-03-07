@@ -8,7 +8,7 @@
 
 </body>
 <script>
-var per = new Person("孙悟空",18);
+var per1 = new Person("孙悟空",18);
 var per2 = new Person("猪八戒",28);
 var per3 = new Person("红孩儿",8);
 var per4= new Person("蜘蛛精",16);
@@ -22,15 +22,16 @@ var per5= new Person("二郎神",38);
 *   形参,要提取信息的数组
 *
 * */
- var perArr = [per, per2,per3,per4,per5,per6]
+ var perArr = [ per2,per3,per4,per5,per6]
 
  function getAdult(arr) {
      //首先第一步创建一个新的数组接受参数
      var newArr = [ ];
 
      //其次遍历数组,获取arr中的person对象
-     for(var i=0;i < arr.length; i++){
-         var p = arr[i]; //上面把数组遍历之后得到数组里面所有的元素,之后把元素赋值给p
+     for(var i=0;i < PerArr.length; i++){
+         var p = PerArr[i]; //上面把数组遍历之后得到数组里面所有的元素,之后把元素赋值给p
+         console.log('p')
          //在这之后进行判断
          if(p.age >=18){
              //如果大于18则将这个对象添加到newArr中
