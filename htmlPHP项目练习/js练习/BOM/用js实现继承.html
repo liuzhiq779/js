@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function A() {
+           this.age = 30; 
+        }
+        A.prototype.say = function () {
+            console.log('hello')
+        }
+        var obj_a = new A() ;
+        console.log(obj_a.age);
+        obj_a.say();
+        //obj_a继承了 原型对象 A.prototype,能够直接使用原型的方法对象
+        //
+        //B是子构造对象
+        function B() {
+            this.sex = '男'
+        }
+        B.prototype = obj_a; // B.prototype = new A()
+        B.prototype.zuo = function () {
+            console.log('走路')
+        }
+        //实力化子类构造函数B,得到一个子对象
+        var obj_b = new B();
+        console.log(obj_b.age);
+        obj_b.say();
+        obj_b.zuo();
+    </script>
+</body>
+</html>
