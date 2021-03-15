@@ -17,7 +17,6 @@ fs.writeFile('./hzw.json',str_json, function(err){
   if(!err){
       console.log('添加数据成功')
   } 
-
 })
 })
 

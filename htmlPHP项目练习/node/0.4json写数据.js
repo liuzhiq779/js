@@ -10,7 +10,7 @@ var str = [
     {id:2,names:'乌索普',sex:'男',img:''},
     {id:3,names:'娜美',sex:'女',img:''},
 ]
-console.log(str)
+console.log(str) 
 var jsonstr = JSON.stringify(str)
 console.log(jsonstr)
 fs.writeFile('./hzw.json',jsonstr,function(err){
