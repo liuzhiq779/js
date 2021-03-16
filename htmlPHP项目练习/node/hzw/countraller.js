@@ -13,8 +13,14 @@ module.exports = {
     },
     index:function(res){
         fs.readFile('./index.html','utf8',function(err,strHtml){
+            fs.readFile('./db.json','utf8',function(err,json_str){
+              var json_arr = JSON.parse(json_str);
+                for(let i = 0;i<json_arr.length;i++){
+                     
+                }
+            })
           res.end(strHtml); 
-          //console.log(strHtml)
+          console.log(strHtml)
         });
     }
 }
