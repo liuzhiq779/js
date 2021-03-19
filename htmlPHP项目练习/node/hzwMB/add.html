@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 800px;
+            height: 500px;
+        }
+        td{
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+   <form action="/add?id={{data.id}}" method="post">
+   <table>
+       <tr>
+           <td>姓名</td>
+           <td><input name="name" type="text" value="{{data.name}}"></td>
+       </tr>
+       <tr>
+           <td>能力</td>
+           <td><input type="text" name="nengli" value="{{data.nengli}}"></td>
+       </tr>
+       <tr>
+           <td>集团</td>
+           <td><input type="text" name="jituan" value="{{data.jituan}}" ></td>
+       </tr>
+       <tr>
+           <td>上传图片</td>
+           <td><input type="file"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><input type="submit" value="确认修改"></td>
+       </tr>
+   </table>
+   </form>
+</body>
+</html>

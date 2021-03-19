@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+//写一个程序输出1-100之间的数字，但是遇到可以被三整除的数字就输出数字‘3’代替遇到
+//可以被5整除的数字就输出5，既是三的倍数又是5 的倍数就输出三五
+window.name = 'win'
+var name = 'a',
+function getName() {
+ console.log(this.name)   
+}
+var a = {
+    name : 'b',
+    getName() {
+        console.log(this.name)
+        getName()
+    },
+    c: {
+        name: 'c',
+        getName(){
+     getName.bind(this)()
+        }
+    }
+}
+</script>
+</html>

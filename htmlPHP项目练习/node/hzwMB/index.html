@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link rel="stylesheet" href="/node_modules/boootstrap/dist/css/bootstrap.css">
+    <style>
+        .hero-list img{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-header container">
+           <h1>海贼王<small>角色管理器</small></h1>
+        </div>
+    </header>
+    <div class="container hero-list">
+       <a class="btn btn-success pull-right" href="/add">添加英雄</a>
+       <table class="table table-hover">
+        <thead>
+            <th>编号</th>
+            <th>名称</th>
+            <th>能力</th>
+            <th>团体</th>
+            <th>操作</th>
+          </thead>
+          <tbody id="tbody">
+           {{each data}}
+             <tr>
+                 <td>{{$value.id}}</td>
+                 <td>{{$value.name}}</td>
+                 <td>{{$value.nengli}}</td>
+                 <td>{{$value.jituan}}</td>
+                 <td>
+                     <a href="/getone?id={{$value.id}}">查看</a>&nbsp;
+                     <a href="/edituser?id={{$value.id}}">修改</a>&nbsp;
+                     <a href="">删除</a>&nbsp;
+                     
+                 </td>
+             </tr>
+           {{/each}}
+          </tbody>
+      </table>
+    </div>
+</body>
+</html>

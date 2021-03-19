@@ -1,4 +1,4 @@
-//引入url
+//引入url模块他可以把url里面所有的数据都解析成的对象通过query方法
 var url = require('url');
 var countraller= require('./countraller')
 //路由模块，处理请求的
@@ -21,8 +21,10 @@ module.exports = {
         //如果路径不是/默认请求其他资源
      }else if(urls.pathname ==='/getone'){
        //res.end('11')
+       //调用这个方法，传递三个实参
        countraller.getone(req,res,urls.query.id);
-     }else{
+       
+     } else{
        //调用业务模块other方法
       countraller.other(urls.pathname,res)
      }
