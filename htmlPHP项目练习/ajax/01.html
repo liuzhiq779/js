@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+</head>
+<body>
+    姓名：<input type="text" name="name" id="inp">
+</body>
+<script>
+  var inp = document.getElementById('inp');
+  inp.onblur = function(){
+      //发送请求
+    var xhr = new XMLHttpRequest();
+    xhr.open('get','http://192.168.43.239:8080/gets');
+    xhr.send();
+  }
+</script>
+</html>

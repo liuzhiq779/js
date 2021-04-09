@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   填写 <input type="text" name="" id="inp">
+   <input type="button" value="发送" id="btn">
+</body>
+<script>
+    // document.getElementById('inp').onabort = function () {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('get', 'http://192.168.43.239:8080/gets');
+    //     //设置头信息
+    //     xhr.setRequestHeader('Content-type','mm/form-data');
+    //     xhr.send();
+    //    //监听readyState状态码的
+    //    xhr.onreadystatechange = function(){
+    //     if (xhr.readyState == 4) {
+    //         alert(xhr.responseText)
+    //     }
+    //    } 
+    // }
+    //要求点击按钮拿到服务器返回的数据
+  document.getElementById('btn').onclick = function(){
+   var xhr = new XMLHttpRequest();
+   xhr.open('get','http://192.168.43.239:8080/gets');
+   xhr.send();
+   xhr.onreadystatechange = function(){
+        if (xhr.readyState == 4) {
+            alert(xhr.responseText)
+        } 
+       }
+  }
+</script>
+</html>
